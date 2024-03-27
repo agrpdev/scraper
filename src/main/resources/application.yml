@@ -6,7 +6,7 @@ selenide:
 control-plane:
   url: "https://scraper-scraper-main.kube.agrp.dev/rest/v2/control"
   timeoutSeconds: 30
-  apiKey: "312bd8b9-539e-4f77-b41c-ab278cdd0131"
+  apiKey: "your-api-key"
 
 sources:
   whitelist: exa-scraper #here you can add source ID of source that you want to execute, also you can put here ALL, that will add all sources
