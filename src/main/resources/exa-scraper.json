@@ -1,0 +1,33 @@
+{
+  "scraper": {
+    "id": "exa-scraper",
+    "customId": "exa-scraper",
+    "name": "example Test scraper",
+    "comment": "Scraper example",
+    "enabled": true,
+    "customSettings": {
+      "crawlUrl": "your_URL"
+    }
+  },
+  "crawlSchedule": [
+    {
+      "id": "hour",
+      "name": "hour schedule",
+      "comment": "Crawl data - every hour",
+      "cron": "0 * * * *",
+      "enabled": true,
+      "taskId": "rescrape"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "rescrape",
+      "name": "task",
+      "comment": "CRAWL Everything!",
+      "workItemType": "CRAWL",
+      "task": {
+        "rescrape": true
+      }
+    }
+  ]
+}
